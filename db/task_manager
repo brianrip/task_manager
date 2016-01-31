@@ -1,6 +1,7 @@
 ---
 tasks:
 - id: 1
+<<<<<<< HEAD
   title: this one
   description: now
 - id: 2
@@ -22,3 +23,14 @@ tasks:
   title: grow
   description: grass
 total: 7
+=======
+  title: Drive
+  description: to Texas
+- id: 2
+  title: Shovel
+  description: Poop
+- id: 3
+  title: Coin
+  description: Bitcoin
+total: 3
+>>>>>>> 1f32bdd6f66117e16fc7138075ff4d71f504bbd0

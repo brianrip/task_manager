@@ -28,8 +28,7 @@ class TaskManager
   end
 
   def raw_task(id)
-    raw_tasks.find { |task| task["id"] == id }
-
+      raw_tasks.find { |task| task["id"] == id }
   end
 
   def find(id)
