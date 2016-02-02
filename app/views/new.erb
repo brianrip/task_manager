@@ -1,6 +1,29 @@
-<form action="/tasks" method="post">
-  <p>Enter a new task:</p>
-  <input type='text' name='task[title]'/><br>
-  <textarea name="task[description]"></textarea><br>
-  <input type='submit'/>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="/application.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  <title>My Sinatra Application</title>
+</head>
+<body>
+  <div class="row text-center">
+    <ul class= "nav navbar-default">
+      <li><a href="/dashboard.erb">Home</a></li>
+    </ul>
+  </div>
+<div class="container">
+  <div class="hero-unit">
+    <!-- <img id="trees" src="https://images.unsplash.com/photo-1436407886995-41f8f5ee43ad?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=e7d757a5f131aa2fcaa01e41757b9165" alt="trees with sky"> -->
+    <form action="/tasks" method="post">
+    <h3>Enter a new task:</h3>
+    <h6>Task</h6>
+    <input type='text' name='task[title]'/><br>
+    <h6>Description</h6>
+    <textarea class= "form-control" name="task[description]"></textarea><br>
+    <button type='submit' class= "btn btn-default">Submit</button>
+  </form>
+</div>
+</div>
+</body>
+</html>
